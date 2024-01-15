@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="navbar">
+ <div class="header">
+ <img src="imges/logo2.webp">
+ <ul class="nav-list">
+<li><a href="#home">Home</a></li>
+<li><a href="about.html">About</a></li>
+ <li><a href="gallery.html">Gallery</a></li>
+ <li><a href="other courese.html">Other Courses</a></li>
+ </ul>
+</div>
+ <div class="content">
+ <div class="img1">
+ <h1>Welcome to G Champ <span class="img1_h1">Abacus</span></h1>
+ <div class="txt">
+<p1>Advantage of Abacus Children solve maths faster on Abacus than caculator  Brain gym
+ activities are taught in this Development of child's latent mental qualities  through brain
+ gym activity Children's memory increases Children's concentration increases Accuracy 100% due to solving
+math on Abacus We guarantee that students  can solve 100 math problems in ten minutes In this we
+teach to write with both hands,  it develops both our brains in a better way and doubles our speed
+ </p1>
+ </div>
+  <div class="im2"><img src="imges/img(1) 1.jpg">
+   </div>
+   </div>
+    </div>
+    <div class="main" id="">
+ <div class="text1">
+ <h1>Our Vision</h1>
+<p1>To provide quality education to cater wisdom across the world.
+ To Provide business partners earning opportunities to fulfill their life through
+ quality products, services and training.</p1>
+ </div>
+<div class="main2">
+ <div class="text2">
+ <h1>Our Mission</h1>
+<p1>To educate and guide 200000+ Students by 2030.
+ To open 10000+ centers across Maharashtra by 2025.</p1>
+ </div>
+</div>
+ </div>
+ <div class="container">
+ <div class="form">
+<form method="POST">
+ <input type="text" placeholder="Name" id="name" name="name" autocomplete="off">
+ <input type="email" placeholder="Email" id="email" name="email" autocomplete="off">
+ <input type="text" placeholder="Subject" id="subject" name="subject" autocomplete="off">
+ <textarea id="message" placeholder="Message" cols="30" rows="10" name="message"></textarea>
+ <button id="btn">send</button>
+  </form>
+   </div>
+ <div class="main6">
+  <h1>Address</h1>
+  <p1>250,priyanka green city kadodara,</br> tal-palsana
+    District-surat,Gujrat</p1>
+    </div>  
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        let btn = document.getElementById('btn')
+        btn.addEventListener('click', function (e) {
+            e.preventDefault()
+            console.log('form submit')
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let subject = document.getElementById('subject').value;
+            let message = document.getElementById('message').value;
+            let body = 'name:  ' + name + '<br/> email: ' + email + '<br/> subject: ' +
+                subject + '<br/> message: ' + message
+
+            Email.send({
+                Host: " .elasticemail.com",
+                Username: "sp1299157@gmail.com",
+                Password: "5E024E72319B10706D0434FE2B230779D0F9",
+                To: 'sp1299157@gmail.com',
+                From: 'sp1299157@gmail.com',
+                Subject: "New contact from enquriy",
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+        })
+
+
+
+
+
+        
+        
+            
+
+    </script>
+
+</body>
+
+</html>
